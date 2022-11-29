@@ -11,6 +11,21 @@ class Layout extends StatefulWidget {
 
 // Essa classe tem estado Layout, por isso extendemos do estado Layout
 class LayoutState extends State<Layout> {
+  Row criarRow(String texto) {
+    return Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+      Container(
+        margin: EdgeInsets.only(top: 15),
+        child: Text(
+          "Linha 1",
+          style: TextStyle(color: Colors.white),
+        ),
+        width: 400,
+        color: Colors.green.shade300,
+        padding: EdgeInsets.all(10),
+      ),
+    ]);
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -35,14 +50,17 @@ class LayoutState extends State<Layout> {
                   decoration: BoxDecoration(color: Colors.green.shade700)),
 
               // item 1 do menu
+              // ListTile serah um bloco
               ListTile(
                 title: Text("Flutter"),
                 subtitle: Text("flutterzinho"),
+                // Icone no comeco do bloco
                 leading: Icon(
                   Icons.flash_on,
                   color: Colors.red.shade900,
                   size: 24,
                 ),
+                // Icone no fim do bloco
                 trailing: Icon(Icons.keyboard_arrow_right),
                 onTap: () {
                   Navigator.pop(context);
@@ -72,7 +90,7 @@ class LayoutState extends State<Layout> {
                 },
               ),
 
-              // item 3 do menu
+              // item 4 do menu
               ListTile(
                 title: Text("Config"),
                 subtitle: Text("Configzinho"),
@@ -89,7 +107,7 @@ class LayoutState extends State<Layout> {
         ),
 
         // Corpo do app
-        body: Center(
+        /*body: Center(
           // Botao elevado
           child: ElevatedButton(
             // Titulo do botao
@@ -118,14 +136,22 @@ class LayoutState extends State<Layout> {
                 ),
               );
 
-              // Agora sim, estamos chamando a snackbar, barra escura
+              // Agora sim, estamos chamando a snackbar (barra escura)
               // Chamamos a snackbar criada acima
               ScaffoldMessenger.of(context).showSnackBar(snackBar);
             },
           ),
+        ),*/
+
+        body: Column(
+          children: [
+            criarRow("Linha 01"),
+            criarRow("Linha 02"),
+            criarRow("Linha 03")
+          ],
         ),
 
-        // Barra de icones
+        // Barra de icones, pertence ao scaffold
         bottomNavigationBar: BottomNavigationBar(
           items: const [
             // icone home

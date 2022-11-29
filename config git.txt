@@ -6,9 +6,9 @@ git commit -m "criando alteração ...."
 
 git remote add origin <http.......com>
 
-git config --global user.name "kalebe rodrigues"
+git config --global user.name ""
 
-git config --global user.email "kaleberodrigues52@gmail.com"
+git config --global user.email ""
 
 git push origin master
 
