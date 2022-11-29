@@ -149,6 +149,9 @@ class LayoutState extends State<Layout> {
             criarRow("Linha 02"),
             criarRow("Linha 03")
           ],
+
+          // Espacamento manual
+          // Padding(padding: EdgeInsets.all(10)),
         ),
 
         // Barra de icones, pertence ao scaffold
