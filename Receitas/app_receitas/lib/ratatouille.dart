@@ -7,6 +7,12 @@
 //      title: "Titulo do app"
 //      home : nomeDaClasseComEstadoMutahvelCriada()
 //             nesse exemplo: Ratatouille()
+//
+// Para usar imagens criamos uma pasta chamada "assets", e dentro dela
+// outra chamada "img" para guardar nossas imagens
+// Para usa-las precisamos configurar o arquivo pubspec.yaml e adicionar apos "flutter:":
+//  assets:
+//  - assets/img/
 
 // Funcoes usadas:
 //  - MaterialApp():
@@ -25,6 +31,8 @@
 //      leading: proprio icone
 //  - Icon():
 //      Como argumento podemos chamar o objeto da classe de icones do flutter "Icons.nome_do_icone"
+//  - SingleChildScrollView():
+//      Serve para rolar tela, um scroll
 
 // Funcoes derivadas de classes
 //  - Transform.translate: transforma a largura e altura para algum valor desejado
@@ -33,6 +41,7 @@
 //  - Icons.nome_do_icone: busca o item desejado na biblioteca de icones do flutter
 
 import 'package:flutter/material.dart';
+import 'detalhes.dart';
 
 class Ratatouille extends StatefulWidget {
   @override
@@ -46,13 +55,19 @@ class RatatouilleState extends State<Ratatouille> {
       appBar: AppBar(
         title: Text('Ratatouille'),
         backgroundColor: Colors.orange.shade600,
-        leadingWidth: 25,
+        leadingWidth: 40,
         leading: Transform.translate(
-            offset: Offset(10, 0),
-            child: Image.asset("assets/img/ratatouille.png")),
+            offset: Offset(10, 0), child: Image.asset("img/chef.png")),
       ),
       //drawer: ,
-      //body: ,
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Image.asset("img/bolo.png"),
+            Detalhes(),
+          ],
+        ),
+      ),
       //bottomNavigationBar: ,
     );
   }
