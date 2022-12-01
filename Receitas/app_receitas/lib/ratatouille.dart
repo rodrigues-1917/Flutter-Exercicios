@@ -57,16 +57,11 @@ class RatatouilleState extends State<Ratatouille> {
         backgroundColor: Colors.orange.shade600,
         leadingWidth: 40,
         leading: Transform.translate(
-            offset: Offset(10, 0), child: Image.asset("img/chef.png")),
+            offset: Offset(10, 0), child: Image.asset("assets/img/chef.png")),
       ),
       //drawer: ,
       body: SingleChildScrollView(
-        child: Column(
-          children: [
-            Image.asset("img/bolo.png"),
-            Detalhes(),
-          ],
-        ),
+        child: Detalhes(),
       ),
       //bottomNavigationBar: ,
     );
