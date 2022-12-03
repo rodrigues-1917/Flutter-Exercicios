@@ -1,3 +1,4 @@
+import 'package:app_contatos/View/busca.dart';
 import 'package:app_contatos/View/home.dart';
 import 'package:flutter/material.dart';
 
@@ -97,7 +98,7 @@ class MenuDrawer extends StatelessWidget {
             ),
             onTap: () {
               Navigator.push(
-                  context, MaterialPageRoute(builder: ((context) => Home())));
+                  context, MaterialPageRoute(builder: ((context) => Busca())));
             },
           ),
 
