@@ -1,5 +1,6 @@
 import 'package:app_contatos/View/busca.dart';
 import 'package:app_contatos/View/recursos/barraSuperior.dart';
+import 'package:app_contatos/View/recursos/cadastro.dart';
 import 'package:app_contatos/View/recursos/menu.dart';
 import 'package:flutter/material.dart';
 
@@ -115,8 +116,10 @@ class HomeState extends State<Home> {
                             ]),
                       ),
                       onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Home()));
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => Cadastro()));
                       },
                     );
                   },

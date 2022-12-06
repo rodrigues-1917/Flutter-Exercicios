@@ -1,5 +1,7 @@
 import 'package:app_contatos/Model/contatoService.dart';
+import 'package:app_contatos/View/perfil.dart';
 import 'package:app_contatos/View/recursos/barraSuperior.dart';
+import 'package:app_contatos/View/recursos/cadastro.dart';
 import 'package:app_contatos/View/recursos/menu.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
@@ -80,7 +82,14 @@ class BuscaState extends State<Busca> {
                   color: Colors.white,
                   size: 17,
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => Perfil(
+                                id: contato.id,
+                              )));
+                },
               ),
             ),
           );
@@ -91,9 +100,11 @@ class BuscaState extends State<Busca> {
       floatingActionButton: FloatingActionButton(
           child: Icon(
             Icons.add,
-            color: Colors.white,
           ),
-          onPressed: () {}),
+          onPressed: () {
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => Cadastro()));
+          }),
     );
   }
 }
