@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "567472457041",
+    "firebase_url": "https://banco-f4f66-default-rtdb.firebaseio.com",
+    "project_id": "banco-f4f66",
+    "storage_bucket": "banco-f4f66.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:567472457041:android:67eab4f2902efb980f3f70",
+        "android_client_info": {
+          "package_name": "com.example.banco2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "567472457041-vmerbpvio4dr6js1mai71manhlt4vv0i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIV_hVTwNYAUX0SQdCtv8RxnRDrorJsg8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "567472457041-vmerbpvio4dr6js1mai71manhlt4vv0i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
