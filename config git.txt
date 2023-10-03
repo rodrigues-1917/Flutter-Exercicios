@@ -16,9 +16,6 @@ git push origin master
 
 
 
-
-
-
 git add * 
 
 git commit -m "o que foi feito"
@@ -27,6 +24,14 @@ git push origin master
 
 
 git pull origin master
+
+
+
+
+Comando para forçar pull e sobrescrever arquivos locais do repositório
+git fetch
+git reset --hard HEAD
+git merge origin/nome_do_branch
 
 
 
