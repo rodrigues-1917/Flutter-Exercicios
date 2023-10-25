@@ -27,6 +27,11 @@ git pull origin master
 
 
 
+Para setar o caminho no terminal:
+
+cd /D/Documentos/"Int Plantas"/
+
+
 
 Comando para forçar pull e sobrescrever arquivos locais do repositório
 git fetch
